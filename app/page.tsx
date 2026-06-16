@@ -226,6 +226,10 @@ export default function Home() {
           <textarea
             className="border p-3 rounded-lg"
             placeholder="What do you need help with?"
+             value={form.name}
+  onChange={(e) =>
+    setForm({ ...form, name: e.target.value })
+  }
           />
 
           <button className="bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700">
