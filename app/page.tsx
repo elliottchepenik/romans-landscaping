@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { useState } from "react";
 
 export default function Home() {
@@ -56,7 +56,7 @@ export default function Home() {
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:0000000000"
+              href="tel:4439962397"
               className="bg-green-500 hover:bg-green-600 transition px-6 py-3 rounded-xl font-semibold text-white shadow-lg"
             >
               Call Now
@@ -224,13 +224,13 @@ export default function Home() {
             }
           />
           <textarea
-            className="border p-3 rounded-lg"
-            placeholder="What do you need help with?"
-             value={form.name}
+  className="border p-3 rounded-lg"
+  placeholder="What do you need help with?"
+  value={form.message}
   onChange={(e) =>
-    setForm({ ...form, name: e.target.value })
+    setForm({ ...form, message: e.target.value })
   }
-          />
+/>
 
           <button className="bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700">
             Submit Request
